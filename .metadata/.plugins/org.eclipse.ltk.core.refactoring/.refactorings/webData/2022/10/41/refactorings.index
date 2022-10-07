@@ -1,9 +1,0 @@
-1664919386882	Move 'application.properties' to 'resources'
-1665016697077	Copy compilation unit
-1665016861669	Rename compilation unit 'incomeStatements.java'
-1665016910419	Copy compilation unit
-1665018133516	Rename compilation unit 'IncomeStatements.java'
-1665018250250	Copy compilation unit
-1665018425873	Rename type 'StockId'
-1665018438454	Rename type 'User'
-1665018448052	Rename type 'UserRepository'
