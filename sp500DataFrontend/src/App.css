@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+#chart, #choiceButtons, #DailyTable{
+	padding: 8px;
+  	margin: 10px;
+  	border-radius: 7px;
+  	border: 2px solid black;
+  	border-style: outset;
+}
+#chart{
+	width: 45%;
+	height: 30%;
+	float: left;
+}
+#choiceButtons{
+	width: 45%;
+	height: 25%;
+	float: top;
+}
+#DailyTable{
+	width: 52%;
+	height: 300px;
+	float: right;
+	overflow-y:scroll;
+}
