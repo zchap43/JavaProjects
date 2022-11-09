@@ -5,11 +5,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 import javax.persistence.Table;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import java.io.Serializable;
 
-@Entity // This tells Hibernate to make a table out of this class
+@Entity
 @Table(name = "prices")
 @IdClass(PriceId.class)
 public class Price implements Serializable{
@@ -32,21 +30,11 @@ public class Price implements Serializable{
   @Column(name = "volume")
   private float volume;
   
-  public String getDate() {
-    return date;
-  }
-  public void setDate(String d) {
-	    this.date = d;
-  }
-  public String getTicker() {
-	    return ticker;
-  }
-  public void setTicker(String t) {
-	    this.ticker = t;
-  }
-  public float getOpen() {
-	    return open;
-  }
+  public String getDate() {return date;}
+  public void setDate(String d) {this.date = d;}
+  public String getTicker() {return ticker;}
+  public void setTicker(String t) {this.ticker = t;}
+  public float getOpen() {return open;}
   public void setOpen(float o) {
 	    this.open = o;
   }

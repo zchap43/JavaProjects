@@ -5,24 +5,23 @@ import java.util.Objects;
 
 public class IncomeStatementId implements Serializable {
 
-	private String date;
-	private String ticker;
-	
-    public IncomeStatementId() {
-    }
-
+	public String date;
+	public String ticker;
     public IncomeStatementId(String date, String ticker) {
         this.date = date;
         this.ticker = ticker;
+    }
+    public IncomeStatementId() {
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        IncomeStatementId incomeStatement = (IncomeStatementId) o;
-        return date.equals(incomeStatement.date) &&
-                ticker.equals(incomeStatement.ticker);
+        IncomeStatementId incomeStatementId = (IncomeStatementId) o;
+        System.out.println("Checking Values");
+        return date.equals(incomeStatementId.date) &&
+                ticker.equals(incomeStatementId.ticker);
     }
 
     @Override
